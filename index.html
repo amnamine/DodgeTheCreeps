@@ -3,47 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dodge The Creeps - Download</title>
+    <title>Dodge The Creeps - Your First 2D Game | Godot Engine</title>
+    <meta name="description" content="A complete 2D game created with Godot Engine. Move your character and avoid enemies for as long as possible!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hero">
-        <div class="container">
-            <!-- Game Title -->
-            <h1>Dodge The Creeps</h1>
+    <div class="background-animation"></div>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="godot-badge">
+                <img src="images/godot-logo.png" alt="Godot Engine" class="godot-logo">
+                <span>Powered by Godot Engine</span>
+            </div>
+        </header>
 
-            <!-- Game Logo -->
-            <img src="images/game-logo.png" alt="Game Logo" class="game-logo" />
+        <!-- Hero Section -->
+        <main class="hero">
+            <!-- Game Title with Animation -->
+            <div class="title-container">
+                <h1 class="game-title">
+                    <span class="title-word">Dodge</span>
+                    <span class="title-word">The</span>
+                    <span class="title-word accent">Creeps</span>
+                </h1>
+            </div>
 
-            <!-- Description -->
-            <p class="description">
-                The game is called <strong>"Dodge the Creeps!"</strong>. Your character must move and avoid the enemies for as long as possible.
-            </p>
+            <!-- Game Logo with Animation -->
+            <div class="logo-container">
+                <img src="images/game-logo.png" alt="Dodge The Creeps Logo" class="game-logo" />
+                <div class="logo-glow"></div>
+            </div>
 
-            <!-- Game Previews -->
-            <div class="preview">
-                <div class="preview-item">
-                    <img src="images/game-preview.png" alt="Game Screenshot" class="game-preview">
-                    <p>Static Screenshot</p>
-                </div>
-                <div class="preview-item">
-                    <img src="images/game-preview-animated.webp" alt="Game Animated Preview" class="game-preview">
-                    <p>Animated Preview</p>
+            <!-- Enhanced Description -->
+            <div class="description-card">
+                <p class="description-intro">
+                    <strong>Your First Complete 2D Game</strong>
+                </p>
+                <p class="description">
+                    Dodge the Creeps is a simple yet complete 2D game created with <strong>Godot Engine</strong>. 
+                    Control your character and avoid the enemies for as long as possible. This project serves as 
+                    an introduction to the Godot engine, teaching you how to structure a project, create scenes, 
+                    handle player input, spawn enemies, and build a complete game experience.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎮</div>
+                        <span>2D Game Development</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <span>Fast-Paced Action</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <span>Survival Challenge</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <span>Learn Godot</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Download Buttons -->
-            <div class="buttons">
-                <a href="downloads/DodgeTheCreeps_Windows.rar" download class="button windows">
-                    <img src="images/windows-logo.png" alt="Windows Logo" />
-                    Download for Windows
-                </a>
-                <a href="downloads/DodgeTheCreeps_Android.apk" download class="button android">
-                    <img src="images/android-logo.png" alt="Android Logo" />
-                    Download for Android
-                </a>
+            <!-- Game Previews with Enhanced Cards -->
+            <div class="preview-section">
+                <h2 class="section-title">Game Preview</h2>
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <div class="card-header">
+                            <span class="card-badge">Static</span>
+                        </div>
+                        <div class="preview-image-container">
+                            <img src="images/game-preview.png" alt="Game Screenshot" class="game-preview">
+                            <div class="preview-overlay">
+                                <span>Game Screenshot</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-card">
+                        <div class="card-header">
+                            <span class="card-badge animated-badge">Animated</span>
+                        </div>
+                        <div class="preview-image-container">
+                            <img src="images/game-preview-animated.webp" alt="Game Animated Preview" class="game-preview">
+                            <div class="preview-overlay">
+                                <span>Live Gameplay</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <!-- Download Buttons with Enhanced Design -->
+            <div class="download-section">
+                <h2 class="section-title">Download Now</h2>
+                <p class="download-subtitle">Available for multiple platforms</p>
+                <div class="buttons">
+                    <a href="downloads/DodgeTheCreeps_Windows.rar" download class="button windows">
+                        <div class="button-content">
+                            <div class="button-icon">
+                                <img src="images/windows-logo.png" alt="Windows Logo" />
+                            </div>
+                            <div class="button-text">
+                                <span class="button-label">Windows</span>
+                                <span class="button-sublabel">Download .rar</span>
+                            </div>
+                        </div>
+                        <div class="button-ripple"></div>
+                    </a>
+                    <a href="downloads/DodgeTheCreeps_Android.apk" download class="button android">
+                        <div class="button-content">
+                            <div class="button-icon">
+                                <img src="images/android-logo.png" alt="Android Logo" />
+                            </div>
+                            <div class="button-text">
+                                <span class="button-label">Android</span>
+                                <span class="button-sublabel">Download .apk</span>
+                            </div>
+                        </div>
+                        <div class="button-ripple"></div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created with Godot Engine • <a href="https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html" target="_blank" rel="noopener noreferrer">Learn how to make this game</a></p>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
